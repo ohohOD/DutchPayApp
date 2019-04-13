@@ -9,9 +9,13 @@
 /* Begin PBXBuildFile section */
 		CD9B9B9C225F536E007F513E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9B9B9B225F536E007F513E /* AppDelegate.swift */; };
 		CD9B9B9E225F536E007F513E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9B9B9D225F536E007F513E /* ViewController.swift */; };
-		CD9B9BA1225F536E007F513E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD9B9B9F225F536E007F513E /* Main.storyboard */; };
+		CD9B9BA1225F536E007F513E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD9B9B9F225F536E007F513E /* Main.storyboard */; settings = {ASSET_TAGS = (goPrev, ); }; };
 		CD9B9BA3225F536F007F513E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD9B9BA2225F536F007F513E /* Assets.xcassets */; };
 		CD9B9BA6225F536F007F513E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD9B9BA4225F536F007F513E /* LaunchScreen.storyboard */; };
+		CD9B9BAE225F6772007F513E /* PeopleCountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9B9BAD225F6772007F513E /* PeopleCountVC.swift */; };
+		CD9B9BB0225F6908007F513E /* DutchPriceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9B9BAF225F6908007F513E /* DutchPriceVC.swift */; };
+		CD9B9BB2225F6971007F513E /* ResultPriceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9B9BB1225F6971007F513E /* ResultPriceVC.swift */; };
+		CD9B9BB4225F6992007F513E /* RemainPriceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9B9BB3225F6992007F513E /* RemainPriceVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		CD9B9BA2225F536F007F513E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD9B9BA5225F536F007F513E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD9B9BA7225F536F007F513E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD9B9BAD225F6772007F513E /* PeopleCountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleCountVC.swift; sourceTree = "<group>"; };
+		CD9B9BAF225F6908007F513E /* DutchPriceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DutchPriceVC.swift; sourceTree = "<group>"; };
+		CD9B9BB1225F6971007F513E /* ResultPriceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultPriceVC.swift; sourceTree = "<group>"; };
+		CD9B9BB3225F6992007F513E /* RemainPriceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemainPriceVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,10 @@
 				CD9B9BA2225F536F007F513E /* Assets.xcassets */,
 				CD9B9BA4225F536F007F513E /* LaunchScreen.storyboard */,
 				CD9B9BA7225F536F007F513E /* Info.plist */,
+				CD9B9BAD225F6772007F513E /* PeopleCountVC.swift */,
+				CD9B9BAF225F6908007F513E /* DutchPriceVC.swift */,
+				CD9B9BB1225F6971007F513E /* ResultPriceVC.swift */,
+				CD9B9BB3225F6992007F513E /* RemainPriceVC.swift */,
 			);
 			path = DutchPayApp;
 			sourceTree = "<group>";
@@ -90,6 +102,9 @@
 		CD9B9B90225F536E007F513E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					goPrev,
+				);
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = SWUCOMPUTER;
@@ -135,7 +150,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD9B9BAE225F6772007F513E /* PeopleCountVC.swift in Sources */,
+				CD9B9BB0225F6908007F513E /* DutchPriceVC.swift in Sources */,
+				CD9B9BB4225F6992007F513E /* RemainPriceVC.swift in Sources */,
 				CD9B9B9E225F536E007F513E /* ViewController.swift in Sources */,
+				CD9B9BB2225F6971007F513E /* ResultPriceVC.swift in Sources */,
 				CD9B9B9C225F536E007F513E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
