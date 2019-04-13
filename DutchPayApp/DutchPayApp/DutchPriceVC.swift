@@ -148,7 +148,7 @@ class DutchPriceVC: UIViewController, UITextFieldDelegate {
             var avePrice: Int = 0
             
             if let totalPrice = self.TP { // 예외 처리 : TP에 값이 없을 경우 처리하지 않음
-                aveRemain = totalPrice % ((self.countPeople + 1) * 100) // 남는 돈: (총 금액 / 인원수 / 10)의 나머지
+                aveRemain = totalPrice % ((self.countPeople + 1) * 100) // 남는 돈: (총 금액 / 인원수 / 100)의 나머지 - 10원 단위로 나뉘지 않도록 함
                 avePrice = ((totalPrice - aveRemain) / (self.countPeople + 1)) // 각자가 내야하는 값 : (총 금액 - 남는 돈) / 인원 수
             }
             
