@@ -24,6 +24,7 @@ class ResultPriceVC: UIViewController {
     @IBOutlet var labelState06: UILabel!
     @IBOutlet var labelRemain: UILabel!
     @IBOutlet var subviewRemain: UIView!
+    @IBOutlet var dutchPrice: UILabel!
     
     // 홈으로 돌아가는 버튼 구현
     @IBAction func buttonHome(_ sender: UIButton) {
@@ -40,6 +41,7 @@ class ResultPriceVC: UIViewController {
         labelList = [labelState01, labelState02, labelState03, labelState04, labelState05, labelState06]
         
         // 레이블 값 변경
+        dutchPrice.text = "인당 " + String(avePrice) + "원 지불"
         
         for i in 0 ..< labelList.count {
             if i < countPeople + 1 {
@@ -53,14 +55,14 @@ class ResultPriceVC: UIViewController {
                     outString += "(은)는 "
                     if remPrice[i] > 0 { // 남은 금액이 있을 때
                         outString += String(remPrice[i])
-                        outString += " 더 내야 해요."
+                        outString += "원 더 내야 해요."
                     }
                     else if remPrice[i] < 0 { //더 냈을 때
                         outString += String(-remPrice[i])
-                        outString += " 돌려받아야 해요."
+                        outString += "원 받아야 해요."
                     }
                     else if remPrice[i] == 0 { // 다 냈을 때
-                        outString += " 더 낼 필요가 없어요!"
+                        outString += "다 냈어요."
                     }
                     
                     // 라벨에 해당 텍스트 대입
@@ -71,7 +73,7 @@ class ResultPriceVC: UIViewController {
         
         if aveRemain > 0 { // 남은 금액이 있을 때, 해당 서브 뷰를 활성화
             subviewRemain.isHidden = false
-            labelRemain.text = "남은 잔돈 : " + String(aveRemain)
+            labelRemain.text = "남은 잔돈 : " + String(aveRemain) + "원"
         }
         // Do any additional setup after loading the view.
     }
@@ -85,6 +87,7 @@ class ResultPriceVC: UIViewController {
             let randomName: String = self.arrayName[randomIndex]
             
             destVC.randomName = randomName
+            destVC.aveRemain = self.aveRemain
         }
     }
 }

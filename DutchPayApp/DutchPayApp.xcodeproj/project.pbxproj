@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD712CFE2262508700B69517 /* dutch.png in Resources */ = {isa = PBXBuildFile; fileRef = CD712CFC2262508700B69517 /* dutch.png */; };
+		CD712D032262551300B69517 /* buttonBox.png in Resources */ = {isa = PBXBuildFile; fileRef = CD712CFF2262551200B69517 /* buttonBox.png */; };
+		CD712D042262551300B69517 /* letterbox2.png in Resources */ = {isa = PBXBuildFile; fileRef = CD712D002262551300B69517 /* letterbox2.png */; };
+		CD712D052262551300B69517 /* letterbox1.png in Resources */ = {isa = PBXBuildFile; fileRef = CD712D012262551300B69517 /* letterbox1.png */; };
 		CD9B9B9C225F536E007F513E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9B9B9B225F536E007F513E /* AppDelegate.swift */; };
 		CD9B9B9E225F536E007F513E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9B9B9D225F536E007F513E /* ViewController.swift */; };
 		CD9B9BA1225F536E007F513E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD9B9B9F225F536E007F513E /* Main.storyboard */; settings = {ASSET_TAGS = (goPrev, ); }; };
@@ -19,6 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD712CFC2262508700B69517 /* dutch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dutch.png; sourceTree = "<group>"; };
+		CD712CFF2262551200B69517 /* buttonBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonBox.png; sourceTree = "<group>"; };
+		CD712D002262551300B69517 /* letterbox2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = letterbox2.png; sourceTree = "<group>"; };
+		CD712D012262551300B69517 /* letterbox1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = letterbox1.png; sourceTree = "<group>"; };
 		CD9B9B98225F536E007F513E /* DutchPayApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DutchPayApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD9B9B9B225F536E007F513E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD9B9B9D225F536E007F513E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +70,10 @@
 		CD9B9B9A225F536E007F513E /* DutchPayApp */ = {
 			isa = PBXGroup;
 			children = (
+				CD712CFF2262551200B69517 /* buttonBox.png */,
+				CD712D012262551300B69517 /* letterbox1.png */,
+				CD712D002262551300B69517 /* letterbox2.png */,
+				CD712CFC2262508700B69517 /* dutch.png */,
 				CD9B9B9B225F536E007F513E /* AppDelegate.swift */,
 				CD9B9B9D225F536E007F513E /* ViewController.swift */,
 				CD9B9B9F225F536E007F513E /* Main.storyboard */,
@@ -137,9 +149,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD712D042262551300B69517 /* letterbox2.png in Resources */,
 				CD9B9BA6225F536F007F513E /* LaunchScreen.storyboard in Resources */,
+				CD712CFE2262508700B69517 /* dutch.png in Resources */,
+				CD712D032262551300B69517 /* buttonBox.png in Resources */,
 				CD9B9BA3225F536F007F513E /* Assets.xcassets in Resources */,
 				CD9B9BA1225F536E007F513E /* Main.storyboard in Resources */,
+				CD712D052262551300B69517 /* letterbox1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

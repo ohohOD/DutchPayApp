@@ -23,6 +23,9 @@ class DutchPriceVC: UIViewController, UITextFieldDelegate {
     @IBOutlet var textPrice: UITextField!
     @IBOutlet var labelCount: UILabel!
     
+    // 버튼 색상 구현을 위한 UIColor 변수 선언
+    let gray = UIColor.init(red: 135/255, green: 135/255, blue: 255/255, alpha: 1.0)
+    
     func updataData()
     {
         // 1. 이름 배열에 입력값 저장
@@ -58,15 +61,15 @@ class DutchPriceVC: UIViewController, UITextFieldDelegate {
             labelCount.text = String(now + 1) + "."
             
             // 다음 버튼 활성화, 다음 Scene 버튼 비활성화
-            goNext.setTitleColor(.blue, for: .normal)
+            goNext.setTitleColor(.white, for: .normal)
             goNext.isUserInteractionEnabled = true
-            buttonNext.setTitleColor(.gray, for: .normal)
+            buttonNext.setTitleColor(gray, for: .normal)
             buttonNext.isUserInteractionEnabled = false
             
             // 배열의 처음일때
             if now == 0 {
                 // 이전 버튼 비활성화
-                goPrev.setTitleColor(.gray, for: .normal)
+                goPrev.setTitleColor(gray, for: .normal)
                 goPrev.isUserInteractionEnabled = false
             }
         }
@@ -76,15 +79,15 @@ class DutchPriceVC: UIViewController, UITextFieldDelegate {
             labelCount.text = String(now + 1) + "."
             
             // 이전 버튼 활성화
-            goPrev.setTitleColor(.blue, for: .normal)
+            goPrev.setTitleColor(.white, for: .normal)
             goPrev.isUserInteractionEnabled = true
             
             // 배열의 끝일 때
             if now == countPeople {
                 // 다음 버튼 비활성화, 다음 Scene 버튼 활성화
-                goNext.setTitleColor(.gray, for: .normal)
+                goNext.setTitleColor(gray, for: .normal)
                 goNext.isUserInteractionEnabled = false
-                buttonNext.setTitleColor(.blue, for: .normal)
+                buttonNext.setTitleColor(.white, for: .normal)
                 buttonNext.isUserInteractionEnabled = true
             }
         }
@@ -125,11 +128,11 @@ class DutchPriceVC: UIViewController, UITextFieldDelegate {
             arrayName.append("")
             arrayPrice.append(0)
         }
-        
+
         // 버튼 사전설정
-        goPrev.setTitleColor(.gray, for: .normal)
-        goNext.setTitleColor(.blue, for: .normal)
-        buttonNext.setTitleColor(.gray, for: .normal)
+        goPrev.setTitleColor(gray, for: .normal)
+        goNext.setTitleColor(.white, for: .normal)
+        buttonNext.setTitleColor(gray, for: .normal)
         self.goPrev.isUserInteractionEnabled = false
         self.buttonNext.isUserInteractionEnabled = false
         

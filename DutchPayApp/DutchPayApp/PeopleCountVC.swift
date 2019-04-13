@@ -23,8 +23,10 @@ class PeopleCountVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
         return peopleArray.count
     }
     
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return peopleArray[row]
+    // picker 뷰에 삽입할 데이터 선언: 글씨가 하얀색이 되도록 수정함
+    func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
+        let title = NSAttributedString(string: peopleArray[row], attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
+        return title
     }
     
     override func viewDidLoad() {
